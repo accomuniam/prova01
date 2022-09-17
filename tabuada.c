@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int numero, somador=1, tabuada,contador=0;
+    
+    printf("digite um numero: ");
+    scanf ("%i" , &numero);
+    
+    while(numero > 0 && somador <= numero){
+        
+        tabuada= somador*contador;
+        
+        printf("%i X %i = %i \n" , somador, contador, tabuada);
+        
+        contador++;
+        
+       if(contador == 11){
+           
+        contador = 0;
+        somador ++;
+        printf ("\n");
+        
+        }
+    }
+    
+
+    return 0;
+}
