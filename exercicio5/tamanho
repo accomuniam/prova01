@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char nome[100];
+    char email[50];
+    char telefone[20];
+    
+    printf("Digite o nome: ");
+    gets(nome);
+    printf("Digite o e-mail: ");
+    gets(email);
+    printf("Digite o numero de telefone: ");
+    gets(telefone);
+
+
+    // using the %zu format specifier to print size_t
+    printf("\nO tamanho de Nome e  = %d \n",strlen(nome));
+    printf("O tamanho do E-mail e = %d \n",strlen(email));
+    printf("O tamanho do Telefone e = %d \n",strlen(telefone));
+
+    return 0;
+}
